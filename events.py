@@ -19,19 +19,19 @@ import gobject
 
 class UpdateEvt(gobject.GObject):
     __gproperties__ = {
-        'status' : (gobject.TYPE_INT,
-                    "status",
-                    "status",
-                    0,
-                    200,
-                    0,
-                    gobject.PARAM_READWRITE),
+        'status': (gobject.TYPE_INT,
+                   "status",
+                   "status",
+                   0,
+                   200,
+                   0,
+                   gobject.PARAM_READWRITE),
         }
 
     __gsignals__ = {
-        'cps-update' : (gobject.SIGNAL_RUN_LAST,
-                        gobject.TYPE_NONE,
-                        (gobject.TYPE_INT, ))
+        'cps-update': (gobject.SIGNAL_RUN_LAST,
+                       gobject.TYPE_NONE,
+                       (gobject.TYPE_INT, ))
         }
 
     _instance = None
@@ -44,14 +44,14 @@ class UpdateEvt(gobject.GObject):
         if property.name == 'status':
             return self.status
         else:
-            raise AttributeEror, 'unknown property %s' % property.name
+            raise AttributeError, 'unknown property %s' % property.name
 
     def do_set_property(self, property, value):
         if property.name == 'status':
             self.status = value
             self.emit('cps-update', self.get_property('status'))
         else:
-            raise AttributeEror, 'unknown property %s' % property.name
+            raise AttributeError, 'unknown property %s' % property.name
 
     #def do_cps_update(self, my_status):
     #    print "my_status = ", my_status
