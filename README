@@ -1,0 +1,11 @@
+i18n:
+
+For extracting i18n strings from *.glade file you need run:
+intltool-extract --type="gettext/glade" cpsctl.glade
+
+xgettext -k_ -kN_ -o messages.pot *.py *.h
+
+if message.pot is already present:
+msgmerge -U your_code.po messages.pot
+
+msgfmt your_code.po -o locales/your_code/LC_MESSAGES/cpsctl.mo

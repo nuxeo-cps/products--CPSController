@@ -1,0 +1,160 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-09-29 23:59+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../cpscontroller.glade.h:1
+msgid ""
+"'Note: just because a port value is given it does not mean it is enabled. By "
+"default FTP and WebDAV are disabled. To enable them you may need to manually "
+"uncomment them in the zope.conf file."
+msgstr ""
+
+#: ../cpscontroller.glade.h:2
+msgid "*"
+msgstr ""
+
+#: ../cpscontroller.glade.h:3
+msgid "<b>Create Emergency User</b>"
+msgstr ""
+
+#: ../cpscontroller.glade.h:4
+msgid "<b>Ports</b>"
+msgstr ""
+
+#: ../cpscontroller.glade.h:5
+msgid "<b>Site Management</b>"
+msgstr ""
+
+#: ../cpscontroller.glade.h:6
+msgid "<b>Status</b>"
+msgstr ""
+
+#: ../cpscontroller.glade.h:7 ../config.py:18
+msgid "About"
+msgstr ""
+
+#: ../cpscontroller.glade.h:8
+msgid "CPS Controller"
+msgstr ""
+
+#: ../cpscontroller.glade.h:9
+msgid "CPS HTTP Port"
+msgstr ""
+
+#: ../cpscontroller.glade.h:10
+msgid "CPS Status"
+msgstr ""
+
+#: ../cpscontroller.glade.h:11
+msgid "Close"
+msgstr ""
+
+#: ../cpscontroller.glade.h:12
+msgid "Confirm Password"
+msgstr ""
+
+#: ../cpscontroller.glade.h:13 ../config.py:9
+msgid "Create User"
+msgstr ""
+
+#: ../cpscontroller.glade.h:14
+msgid "Emergency User"
+msgstr ""
+
+#: ../cpscontroller.glade.h:15
+msgid "FTP Access"
+msgstr ""
+
+#: ../cpscontroller.glade.h:16
+msgid ""
+"If you can't get access to your Zope instance, you can gain\n"
+"emergency access here."
+msgstr ""
+
+#: ../cpscontroller.glade.h:18
+msgid "Password"
+msgstr ""
+
+#: ../cpscontroller.glade.h:19 ../config.py:15
+msgid "Ports"
+msgstr ""
+
+#: ../cpscontroller.glade.h:20 ../config.py:16
+msgid "Status"
+msgstr ""
+
+#: ../cpscontroller.glade.h:21
+msgid "Text about CPS"
+msgstr ""
+
+#: ../cpscontroller.glade.h:22
+msgid "Unknown..."
+msgstr ""
+
+#: ../cpscontroller.glade.h:23
+msgid "User name"
+msgstr ""
+
+#: ../cpscontroller.glade.h:24
+msgid "View CPS..."
+msgstr ""
+
+#: ../cpscontroller.glade.h:25
+msgid "WebDAV"
+msgstr ""
+
+#: ../cpscontroller.glade.h:26
+msgid "Zope Management HTTP"
+msgstr ""
+
+#: ../cpscontroller.glade.h:27
+msgid "Zope Management Interface..."
+msgstr ""
+
+#: ../config.py:8
+msgid "Usage: cpsctl INSTANCE_HOME SOFTWARE_HOME"
+msgstr ""
+
+#: ../config.py:10
+msgid "Remove User"
+msgstr ""
+
+#: ../config.py:11
+msgid "Passwords do not match"
+msgstr ""
+
+#: ../config.py:12
+msgid "No username"
+msgstr ""
+
+#: ../config.py:13
+msgid "No password"
+msgstr ""
+
+#: ../config.py:17
+msgid ""
+"Emergency\n"
+"User"
+msgstr ""
+
+#: ../config.py:20
+msgid "An emergency user currently exists."
+msgstr ""
+
+#: ../config.py:21
+msgid "There is no emergency user configured."
+msgstr ""
