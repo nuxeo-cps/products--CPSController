@@ -1,4 +1,4 @@
-# (C) Copyright 2003 Nuxeo SARL <http://nuxeo.com>
+# (C) Copyright 2004-2005 Nuxeo SARL <http://nuxeo.com>
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License version 2 as published
@@ -21,7 +21,7 @@ import glob
 
 opts = {
     "py2exe": {
-        "includes": "pango,atk,gobject,encodings,encodings.*",
+        "includes": "pango,atk,gobject,encodings,encodings.*,urllib2,xml.sax",
         }
     }
 
