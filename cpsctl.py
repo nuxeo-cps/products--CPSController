@@ -61,14 +61,10 @@ from zopecfg import getZope
 
 IMAGES_DIR = 'images'
 
-PAGES = {'Ports' : {'page_num' : 0,
-                    'image' : 'ports.png'},
-         'Status' : {'page_num' : 1,
-                     'image' : 'status.png'},
-         'Emergency User' : {'page_num' : 2,
-                             'image' : 'emg_user.png'},
-         'About' : {'page_num' : 3,
-                    'image' : 'about.png'},
+PAGES = {'Ports': {'page_num': 0, 'image': 'ports.png'},
+         'Status': {'page_num': 1, 'image': 'status.png'},
+         'Emergency User': {'page_num': 2, 'image': 'emg_user.png'},
+         'About': {'page_num': 3, 'image': 'about.png'},
          }
 
 NUXEO_IMG = os.path.join(IMAGES_DIR, 'nuxeo.png')
@@ -85,7 +81,6 @@ class AppGUI:
             self._onStopStatusControls()
 
     def __init__(self, argv):
-
         gladefile = os.path.join('glade', 'cpsctl.glade')
 
         gtk.glade.bindtextdomain(APP, DIR)
@@ -123,29 +118,30 @@ class AppGUI:
 
 
     def _connectSignals(self):
-        dic = {'on_closebutton_clicked' :
-               lambda win: gtk.main_quit(),
-               'on_window_destroy' :
-               lambda win: gtk.main_quit(),
-               'on_preftree_cursor_changed' :
-               self.on_preftree_cursor_changed,
-               'on_emguser_button_clicked' :
-               self.on_emguser_button_clicked,
-               'on_cpsport_focus_out_event' :
-               self.on_cpsport_focus_out_event,
-               'on_zopeport_focus_out_event' :
-               self.on_zopeport_focus_out_event,
-               'on_ftpport_focus_out_event' :
-               self.on_ftpport_focus_out_event,
-               'on_davport_focus_out_event' :
-               self.on_davport_focus_out_event,
-               'on_status_button_clicked' :
-               self.on_status_button_clicked,
-               'on_viewcps_clicked' :
-               self.on_viewcps_clicked,
-               'on_zmi_clicked' :
-               self.on_zmi_clicked,
-               }
+        dic = {
+            'on_closebutton_clicked':
+                lambda win: gtk.main_quit(),
+            'on_window_destroy':
+                lambda win: gtk.main_quit(),
+            'on_preftree_cursor_changed':
+                self.on_preftree_cursor_changed,
+            'on_emguser_button_clicked':
+                self.on_emguser_button_clicked,
+            'on_cpsport_focus_out_event':
+                self.on_cpsport_focus_out_event,
+            'on_zopeport_focus_out_event':
+                self.on_zopeport_focus_out_event,
+            'on_ftpport_focus_out_event':
+                self.on_ftpport_focus_out_event,
+            'on_davport_focus_out_event':
+                self.on_davport_focus_out_event,
+            'on_status_button_clicked':
+                self.on_status_button_clicked,
+            'on_viewcps_clicked':
+                self.on_viewcps_clicked,
+            'on_zmi_clicked':
+                self.on_zmi_clicked,
+            }
 
         self.glade.signal_autoconnect(dic)
 
